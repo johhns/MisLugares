@@ -14,14 +14,20 @@ public class Lugar {
     private TipoLugar tipo ;
 
 
-    public Lugar( String    nombre,
-                  String    direccion,
-                  double    longitud,
-                  double    latitud ,
-                  TipoLugar tipo,
-                  int       telefono,
-                  String    url,
-                  String    comentario) {
+    public Lugar() {
+        this.fecha     = System.currentTimeMillis() ;
+        this.posicion  = new GeoPunto( 0.0 , 0.0 ) ;
+        this.tipo      = TipoLugar.OTROS ;
+    }
+
+    public Lugar(String    nombre,
+                 String    direccion,
+                 double    longitud,
+                 double    latitud ,
+                 TipoLugar tipo,
+                 int       telefono,
+                 String    url,
+                 String    comentario) {
         this.fecha     = System.currentTimeMillis() ;
         this.posicion  = new GeoPunto( longitud , latitud ) ;
         this.nombre    = nombre;

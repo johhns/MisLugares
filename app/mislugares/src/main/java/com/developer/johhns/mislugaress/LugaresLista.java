@@ -6,6 +6,7 @@ public class LugaresLista implements RepositorioLugares  {
 
     protected List<Lugar> listaLugares ;
 
+
     @Override
     public Lugar elemento(int id) {
         return listaLugares.get( id ) ;
