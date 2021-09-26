@@ -128,7 +128,7 @@ public class Lugar {
                "url : "        + url        + " , " +
                "comentario : " + comentario + " , " +
                "fecha : "      + fecha      + " , " +
-                "Tipo : "      + tipo       + " , " +
+               "Tipo : "      + tipo       + " , " +
                "valoracion : " + valoracion ;
     }
 
